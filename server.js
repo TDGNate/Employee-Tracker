@@ -11,6 +11,7 @@ const menu = [
   }
 ]
 
+// Adding 
 // add department questions 
 const addDep = [
   {
@@ -35,7 +36,7 @@ const addRole = [
   {
     type: "choice",
     message: "What department does this role belong to?",
-
+    choices: ["Engineering", "Finance", "Legal", "Sales"],
     name: "newRoleDep"
   }
 ]
@@ -43,10 +44,30 @@ const addRole = [
 // add employee questions 
 const addEmp = [
   {
-    type: "input"
+    type: "input",
+    message: "What is the employee's first name?",
+    name: "empFirstName"
+  },
+  {
+    type: "input",
+    message: "What is the employee's last name?",
+    name: "empLastName"
+  },
+  {
+    type: "list",
+    message: "What is the employee's role?",
+    choices: ["Sales Lead", "Salesperson", "Lead Engineer", "Software Engineer", "Account Manager", "Accountant", "Legal Team Lead", "Lawyer", "Customer Service"],
+    name: "empRole"
+  },
+  {
+    type: "list",
+    message: "Who is the employee's Manager?",
+    choices: ["Luke", "Nate", "Tom", "None"],
+    name: "empManager"
   }
 ]
 
+// Initialize Function when apps starts 
 async function init() {
   let appRunning = true;
   let userMenuPick = await inquirer.prompt(menu).then(data => {
