@@ -20,12 +20,12 @@ VALUES
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-("Nate", "McIlvenny"),
-("Skyler", "Ferreira"),
-("Tony", "Quinones"),
-("Cesar", "Infante"),
-("Gil", "Escobedo"),
-("Daniel", "Kang"),
-("Chris", "Hernandez"),
-("Felix", "Cagatin"),
-("Luke", "McIlvenny");
+("Nate", "McIlvenny", 1),
+("Skyler", "Ferreira", 1),
+("Tony", "Quinones" 1),
+("Cesar", "Infante" 1),
+("Gil", "Escobedo" 1),
+("Daniel", "Kang" 1),
+("Chris", "Hernandez" 1),
+("Felix", "Cagatin" 1),
+("Luke", "McIlvenny" 1);
