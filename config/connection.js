@@ -5,10 +5,10 @@ require('dotenv').config()
 // Create a connection to database
 const sqlDatabase = mysql.createConnection(
   {
-    database: 'employee_db',
     host: 'localhost',
-    user: process.env.USERNAME,
-    password: process.env.PASSWORD,
+    database: process.env.DB_NAME,
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD
   }
 )
 
