@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const sqlDatabase = require("./config/connection");
+const db = require('./config/connection')
 
 // menu questions 
 const menu = [
